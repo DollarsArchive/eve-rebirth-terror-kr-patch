@@ -1,31 +1,77 @@
-# EVE rebirth terror 한국어 패치 v1.1.0
+# EVE rebirth terror 한국어 패치
 
-**EVE rebirth terror** 비공식 한국어 패치 **v1.1.0**입니다.
+Nintendo Switch판 **EVE rebirth terror** 비공식 한국어 패치입니다.
 
-이번 버전은 기존 v1.0의 **패치 내용**, 런타임 수정 및 엔딩 자막을 유지하면서 **2026-08-29 기준 최신 검수 결과와 수동 수정 사항**을 반영했습니다.
+최신 버전 다운로드 및 자세한 적용 방법은 [Releases](https://github.com/DollarsArchive/eve-rebirth-terror-kr-patch/releases)를 확인해 주세요.
 
 ## 지원 게임 버전
 
 - **EVE rebirth terror 일본판**
 - **업데이트 1.0.2**
 
-## 패치 내용
+## 한국어화 범위
 
-이번 배포본의 변경 대상은 총 **94개 파일**입니다.
+### 대사 / 이벤트
 
-- 스크립트 BIN 83개
-- 시스템 LZS 7개
-- 한글 표시용 폰트 3개
-- 엔딩 자막 영상 MP4 1개
+스토리 대사 및 이벤트 텍스트의 **한글화 및 검수를 완료했습니다.**
 
-## 적용 전 확인
+<p align="center">
+  <img src="assets/readme/dialogue-01.jpg" width="49%">
+  <img src="assets/readme/dialogue-02.jpg" width="49%">
+</p>
 
-압축 파일에 포함된 `설명서.txt`를 먼저 읽어 주세요.
+### 조사·행동 선택 메뉴
 
-패처는 Base / Update NSP를 검증한 뒤 필요한 파일에만 패치를 적용하여 **모드용 RomFS**를 생성합니다.
-원본 NSP를 직접 수정하거나 재패키징하지 않습니다.
+조사, 이동, 대화 등 게임 진행에 사용되는 **조사·행동 선택 메뉴를 번역했습니다.**
 
-본 배포본에는 **게임 본편 및 원본 데이터**, NSP/XCI/NCA, 원본 RomFS, RomForge 본체, `prod.keys`가 포함되어 있지 않습니다.
+일부 선택지는 원본 이미지에 포함된 일본어가 함께 표시될 수 있습니다.
+
+<p align="center">
+  <img src="assets/readme/action-01.jpg" width="32%">
+  <img src="assets/readme/action-02.jpg" width="32%">
+  <img src="assets/readme/action-03.jpg" width="32%">
+</p>
+
+## 미번역 영역
+
+아래 영역은 현재 일본어로 표시되며 **추가 번역 예정이 없습니다.**
+
+### 타이틀 화면
+
+<p align="center">
+  <img src="assets/readme/title-01.jpg" width="49%">
+  <img src="assets/readme/title-02.jpg" width="49%">
+</p>
+
+**미번역 / 번역 예정 없음**
+
+### 옵션 화면
+
+<p align="center">
+  <img src="assets/readme/options.jpg" width="70%">
+</p>
+
+**미번역 / 번역 예정 없음**
+
+### 지도 화면
+
+<p align="center">
+  <img src="assets/readme/map.jpg" width="70%">
+</p>
+
+지도 화면은 일본어와 함께 영어 표기가 제공되어 **추가 번역 예정이 없습니다.**
+
+## 다운로드
+
+최신 한국어 패치는 [Releases](https://github.com/DollarsArchive/eve-rebirth-terror-kr-patch/releases)에서 받을 수 있습니다.
+
+배포 파일에 포함된 `설명서.txt` 또는 해당 버전의 Release 안내를 참고해 주세요.
+
+## 오류 및 번역 제보
+
+오역, 오탈자, 미번역, 호칭·말투 문제 또는 패치 적용 오류를 발견하셨다면 [Issues](https://github.com/DollarsArchive/eve-rebirth-terror-kr-patch/issues)를 통해 제보해 주세요.
+
+가능하면 발생 장면과 스크린샷을 함께 첨부해 주시면 확인에 도움이 됩니다.
 
 ## 배포 안내
 
@@ -36,5 +82,3 @@
 **본 패치는 게임 원본 파일을 포함하지 않으며, 패치 파일만 제공합니다.**
 
 본 패치의 상업적 판매 및 유료 배포, 원본 게임과 합본 형태의 재배포를 금지합니다.
-
-오역, 오탈자, 미번역, 호칭·말투 문제 또는 패치 적용 오류를 발견하셨다면 저장소의 **Issues**를 통해 제보해 주세요.
