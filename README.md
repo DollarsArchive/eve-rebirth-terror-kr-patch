@@ -38,16 +38,16 @@ Nintendo Switch판 **EVE rebirth terror** 비공식 한국어 패치입니다.
 
 ### 타이틀 화면
 
-<img width="3534" height="1973" alt="스크린샷 2026-08-31 111557" src="https://github.com/user-attachments/assets/d316927f-a77a-41e9-b50e-771b2de55e44" />
-<img width="3512" height="1959" alt="스크린샷 2026-08-31 112004" src="https://github.com/user-attachments/assets/7bb6a908-1589-4d01-a2e0-1818cdbc4168" />
+<img width="70%" alt="스크린샷 2026-08-31 111557" src="https://github.com/user-attachments/assets/d316927f-a77a-41e9-b50e-771b2de55e44" />
+<img width="70%" alt="스크린샷 2026-08-31 112004" src="https://github.com/user-attachments/assets/7bb6a908-1589-4d01-a2e0-1818cdbc4168" />
 
 ### 옵션 화면
 
-<img width="3521" height="1930" alt="스크린샷 2026-08-31 111610" src="https://github.com/user-attachments/assets/170e9875-06e1-4020-8081-8bfb50ea5b95" />
+<img width="70%" alt="스크린샷 2026-08-31 111610" src="https://github.com/user-attachments/assets/170e9875-06e1-4020-8081-8bfb50ea5b95" />
 
 ### 지도 화면
 
-<img width="3519" height="1955" alt="스크린샷 2026-08-31 111809" src="https://github.com/user-attachments/assets/0b09ae20-de3c-49a1-91b2-8fd886546d29" />
+<img width="70%" alt="스크린샷 2026-08-31 111809" src="https://github.com/user-attachments/assets/0b09ae20-de3c-49a1-91b2-8fd886546d29" />
 
 
 지도 화면은 일본어와 함께 영어 표기가 제공되어 번역 예정이 없습니다.
