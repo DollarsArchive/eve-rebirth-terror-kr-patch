@@ -1,0 +1,125 @@
+name: Update README gallery
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    if: github.event.head_commit.message == 'Update README gallery'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Add screenshots
+        shell: bash
+        run: |
+          mkdir -p assets/readme
+          cat > /tmp/readme-images.b64 <<'EOF'
+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
+EOF
+          base64 -d /tmp/readme-images.b64 > /tmp/readme-images.zip
+          unzip -o /tmp/readme-images.zip -d assets/readme
+
+      - name: Write README
+        shell: bash
+        run: |
+          cat > README.md <<'EOF'
+          # EVE rebirth terror 한국어 패치
+
+          Nintendo Switch판 **EVE rebirth terror** 비공식 한국어 패치입니다.
+
+          최신 버전 다운로드 및 자세한 적용 방법은 저장소의 **Releases**를 확인해 주세요.
+
+          ## 지원 게임 버전
+
+          - **EVE rebirth terror 일본판**
+          - **업데이트 1.0.2**
+
+          ## 한국어화 범위
+
+          ### 대사 / 이벤트
+
+          스토리 대사 및 이벤트 텍스트의 **한글화 및 검수를 완료했습니다.**
+
+          <p align="center">
+            <img src="assets/readme/dialogue-01.jpg" width="49%">
+            <img src="assets/readme/dialogue-02.jpg" width="49%">
+          </p>
+
+          ### 조사·행동 선택 메뉴
+
+          조사, 이동, 대화 등 게임 진행에 사용되는 **조사·행동 선택 메뉴를 번역했습니다.**
+
+          일부 선택지는 **원본 이미지에 포함된 일본어가 함께 표시될 수 있습니다.**
+
+          <p align="center">
+            <img src="assets/readme/action-01.jpg" width="32%">
+            <img src="assets/readme/action-02.jpg" width="32%">
+            <img src="assets/readme/action-03.jpg" width="32%">
+          </p>
+
+          ## 미번역 영역
+
+          아래 영역은 현재 일본어로 표시되며 **추가 번역 예정이 없습니다.**
+
+          ### 타이틀 화면
+
+          **미번역 / 번역 예정 없음**
+
+          <p align="center">
+            <img src="assets/readme/title-01.jpg" width="49%">
+            <img src="assets/readme/title-02.jpg" width="49%">
+          </p>
+
+          ### 옵션 화면
+
+          **미번역 / 번역 예정 없음**
+
+          <p align="center">
+            <img src="assets/readme/options.jpg" width="70%">
+          </p>
+
+          ### 지도 화면
+
+          지도 화면은 일본어와 함께 영어 표기가 제공되어 **추가 번역 예정이 없습니다.**
+
+          <p align="center">
+            <img src="assets/readme/map.jpg" width="70%">
+          </p>
+
+          ## 다운로드
+
+          최신 한국어 패치는 저장소의 **Releases**에서 받을 수 있습니다.
+
+          배포 파일에 포함된 `설명서.txt` 또는 해당 버전의 Release 안내를 참고해 주세요.
+
+          ## 오류 및 번역 제보
+
+          오역, 오탈자, 미번역, 호칭·말투 문제 또는 패치 적용 오류를 발견하셨다면 저장소의 **Issues**를 통해 제보해 주세요.
+
+          가능하면 발생 장면과 스크린샷을 함께 첨부해 주시면 확인에 도움이 됩니다.
+
+          ## 배포 안내
+
+          본 패치는 팬 제작 비공식 한국어 패치입니다.
+
+          원작 및 관련 콘텐츠의 저작권과 상표권은 각 권리자에게 있습니다.
+
+          **본 패치는 게임 원본 파일을 포함하지 않으며, 패치 파일만 제공합니다.**
+
+          본 패치의 상업적 판매 및 유료 배포, 원본 게임과 합본 형태의 재배포를 금지합니다.
+          EOF
+
+      - name: Commit changes
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/readme
+          git commit -m "Apply README gallery"
+          git push
